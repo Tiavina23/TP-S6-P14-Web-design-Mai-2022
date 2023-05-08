@@ -57,6 +57,7 @@ class Controller_Principal extends BaseController
       
         $imageName = time().'.'.$image->extension();
         echo $imageName;
+        chmod(public_path('uploads/'), 0777);
         $image->move(public_path('uploads/'),$imageName);
         $domaine=request('domaine');
         $secteur=request('secteur');
