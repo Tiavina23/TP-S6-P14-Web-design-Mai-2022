@@ -22,7 +22,7 @@ Route::post('/ajout_contenu', App\Http\Controllers\Controller_Principal::class .
 Route::get('/ajout', App\Http\Controllers\Controller_Principal::class . '@aj');
 Route::post('ckeditor/image_upload', 'CKEditorController@upload')->name('upload');
 Route::get('/front', App\Http\Controllers\Controller_Principal::class . '@data_contenu')->name('front');
-Route::post('/search', App\Http\Controllers\Controller_Principal::class . '@search');
+Route::get('/search', App\Http\Controllers\Controller_Principal::class . '@search');
 Route::get('/RewriteUrl/{id_contenu}', App\Http\Controllers\Controller_Principal::class . '@gen_fiche')->name('voir');
 Route::get('/Secteur/{id_secteur}', App\Http\Controllers\Controller_Principal::class . '@gen_sec')->name('secteur');
 Route::get('/Domaine/{id_domaine}', App\Http\Controllers\Controller_Principal::class . '@gen_dom')->name('domaine');
