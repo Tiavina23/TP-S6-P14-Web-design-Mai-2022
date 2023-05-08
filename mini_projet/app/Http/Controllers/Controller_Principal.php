@@ -67,7 +67,7 @@ class Controller_Principal extends BaseController
         $illustrateur= request('illustrateur');
         $data=$this->model()->getdata('domaine');
         $data1=$this->model()->getdata('secteur');
-       $this->model()->insert($titre,$imageName,$domaine,$secteur,$des,$illustrateur,$extension);
+       $this->model()->insert($titre,$imageData,$domaine,$secteur,$des,$illustrateur,$extension);
        return view('back_office.ajout_contenu',['data'=>$data,'data1'=>$data1]);
     }
 
@@ -135,6 +135,7 @@ class Controller_Principal extends BaseController
             'domaine'=>$result[0]->domaine,
             'secteur'=>$result[0]->secteur,
             'image'=>$result[0]->image,
+            'extension'=>$result[0]->extension,
             'illustrateur'=>$result[0]->illustrateur,
             'description'=>$result[0]->description,
             'image'=>$result[0]->image
