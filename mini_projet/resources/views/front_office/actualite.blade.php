@@ -44,7 +44,7 @@
     </div><!-- End Logo -->
 
     <div class="search-bar">
-      <form class="search-form d-flex align-items-center" method="POST" action="{{url('search')}}">
+      <form class="search-form d-flex align-items-center" method="get" action="{{url('search')}}">
         @csrf
         <input type="text" name="query" placeholder="Search" title="Enter search keyword">
         <button type="submit" title="Search"><i class="bi bi-search"></i></button>
