@@ -129,13 +129,13 @@
 
 
                   <div class="carousel-item active">
-                    <img src="data:/uploads/{{ $tab->extension }};base64,{{$tab->image}}" class="d-block w-100" alt="...">
+                    <img src="/uploads/base64,{{$tab->image}}" class="d-block w-100" alt="...">
                   </div>
                   <div class="carousel-item">
-                    <img src="data:/uploads/{{ $tab->extension }};base64,{{$tab->image}}" class="d-block w-100" alt="...">
+                    <img src="/uploads/base64,{{$tab->image}}" class="d-block w-100" alt="...">
                   </div>
                   <div class="carousel-item">
-                    <img src="data:/uploads/{{ $tab->extension }};base64,{{$tab->image}}" class="d-block w-100" alt="...">
+                    <img src="/uploads/base64,{{$tab->image}}" class="d-block w-100" alt="...">
                   </div>
                 </div>
 
