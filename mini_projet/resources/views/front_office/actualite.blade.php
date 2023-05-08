@@ -12,9 +12,6 @@
 
   <title>Actualités de l'intelligence artificielle </title>
 
-  <!-- Favicons -->
-  <link href="{{secure_asset('assets/img/logo.png')}}" rel="icon">
-  <link href="{{secure_asset('assets/img/logo.png')}}" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.gstatic.com" rel="preconnect">
@@ -37,8 +34,8 @@
 
     <div class="d-flex align-items-center justify-content-between">
     
-        <img src="{{ secure_asset('assets/img/logo.png')}}" alt="">
-        <span class="d-none d-lg-block">INTEL_ARTIF</span>
+       
+       <span class="d-none d-lg-block">INTELLIGENCE .ARTICIELLE</span>
     
       <i class="bi bi-list toggle-sidebar-btn"></i>
     </div><!-- End Logo -->
