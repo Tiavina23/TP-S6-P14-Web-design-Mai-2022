@@ -55,20 +55,16 @@ class Controller_Principal extends BaseController
         $titre=request('titre');
         $image = $request->file('image');
       
-        if($image!=''){
-            $extension = $image->getClientOriginalExtension();
-            $imagePath = $image->getPathname();
-            $contents = file_get_contents($imagePath);
-            $imageName = base64_encode($contents);
-        }
-        $imageData = $imageName . '.' . $extension;
+        $imageName = time().'.'.$image->extension();
+        echo $imageName;
+        $image->move(public_path('uploads'),$imageName);
         $domaine=request('domaine');
         $secteur=request('secteur');
         $des=request('desc');
         $illustrateur= request('illustrateur');
         $data=$this->model()->getdata('domaine');
         $data1=$this->model()->getdata('secteur');
-       $this->model()->insert($titre,$imageData,$domaine,$secteur,$des,$illustrateur);
+       $this->model()->insert($titre,$imageName,$domaine,$secteur,$des,$illustrateur);
        return view('back_office.ajout_contenu',['data'=>$data,'data1'=>$data1]);
     }
 
