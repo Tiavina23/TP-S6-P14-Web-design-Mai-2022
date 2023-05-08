@@ -151,7 +151,7 @@
               </div><!-- End Slides with controls -->
               <div>
                 <a href="{{ route('voir',['id_contenu'=>md5($tab->id_contenu)])}}"> <h5><strong>Titre : {{ $tab->titre}}</strong></h5></a>
-                <p> le {{ $tab->date_sortie }}</p>
+                <p> le {{ $tab->date_sortie }} par {{$tab->illustrateur}}</p>
                 <h5> Domaine : {{  $tab->domaine }}</h5>
                 <h5> Secteur : {{  $tab->secteur }}</h5>
 
