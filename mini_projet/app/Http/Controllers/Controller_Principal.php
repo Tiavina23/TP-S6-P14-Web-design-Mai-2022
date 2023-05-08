@@ -38,8 +38,6 @@ class Controller_Principal extends BaseController
     public function logintraitement(){
         $email=request('email');
         $mdp=request('mdp');
-        echo $email;
-        echo $mdp;
         $data=$this->model()->getdata('domaine');
         $data1=$this->model()->getdata('secteur');
         $liste=$this->model()->paginate_contenu();
@@ -57,7 +55,6 @@ class Controller_Principal extends BaseController
         $titre=request('titre');
         $image = $request->file('image');
         $imageName = time().'.'.$image->extension();
-        echo $imageName;
         $image->move(public_path('uploads'),$imageName);
         $domaine=request('domaine');
         $secteur=request('secteur');
@@ -94,7 +91,6 @@ class Controller_Principal extends BaseController
         $titre=request('titre');
         $image = $request->file('image');
         $imageName = time().'.'.$image->extension();
-        echo $imageName;
         $image->move(public_path('uploads'),$imageName);
         $domaine=request('domaine');
         $secteur=request('secteur');
@@ -124,7 +120,6 @@ class Controller_Principal extends BaseController
     }
     function gen_fiche(){
         $id=request('id_contenu');
-        echo $id;
         $result=$this->model()->getpub($id);
         $id_contenu=$result[0]->id_contenu;
         $image=$this->model()->getimage($id_contenu);
