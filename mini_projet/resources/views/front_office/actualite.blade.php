@@ -24,7 +24,7 @@
   <link href="{{secure_asset('assets/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
   <link href="{{secure_asset('assets/vendor/bootstrap-icons/bootstrap-icons.css')}}" rel="stylesheet">
   <link href="{{secure_asset('assets/vendor/boxicons/css/boxicons.min.css')}}" rel="stylesheet">
-  <link href="{{secure_asset('assets/vendor/simple-datatables/style.css')}}" rel="stylesheet">
+
 
   <!-- Template Main CSS File -->
   <link href="{{secure_asset('assets/css/style.css')}}" rel="stylesheet">
@@ -188,16 +188,10 @@
 
   </footer><!-- End Footer -->
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-  <!-- Vendor JS Files -->
-  <script src="{{ secure_asset('assets/vendor/apexcharts/apexcharts.min.js')}}"></script>
-  <script src="{{ secure_asset('assets/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
-  <script src="{{ secure_asset('assets/vendor/simple-datatables/simple-datatables.js')}}"></script>
-  <script src="{{ secure_asset('assets/vendor/tinymce/tinymce.min.js')}}"></script>
-  <script src="{{ secure_asset('assets/vendor/php-email-form/validate.js')}}"></script>
 
-  <!-- Template Main JS File -->
+
+
   <script src="{{secure_asset('assets/js/main.js')}}"></script>
 
 </body>
