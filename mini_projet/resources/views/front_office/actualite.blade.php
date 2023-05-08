@@ -79,7 +79,7 @@
               <ul class="sidebar-nav" id="sidebar-nav">
                 @foreach ($data1 as $tab)
                     <br>
-                    <a href="{{ route('domaine',['id_domaine'=>md5($tab->id_domaine)])}}"><li class="nav-item">{{$tab->libelle}}</li></a>
+                    <a href="{{ route('domaine',['id_domaine'=>md5($tab->id_domaine)])}}"><li class="nav-item"><strong>{{$tab->libelle}}</strong></li></a>
                     <br>
                 @endforeach
 
@@ -89,7 +89,7 @@
                 <ul class="sidebar-nav" id="sidebar-nav">
                     @foreach ($data2 as $tab)
                         <br>
-                        <a href="{{ route('secteur',['id_secteur'=>md5($tab->id_secteur)])}}"><li class="nav-item">{{$tab->libelle}}</li></a>
+                        <a href="{{ route('secteur',['id_secteur'=>md5($tab->id_secteur)])}}"><li class="nav-item"><strong>{{$tab->libelle}}</strong></li></a>
                         <br>
                     @endforeach
 
@@ -109,7 +109,7 @@
       <h1>| INTELLIGENCE ARTIFICIELLE</h1>
       <nav>
         <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="index.html">Acctualite</a></li>
+          <li class="breadcrumb-item">Acctualite</li>
           <li class="breadcrumb-item">Secteur</li>
           <li class="breadcrumb-item">Domaine</li>
 
@@ -155,7 +155,7 @@
 
               </div><!-- End Slides with controls -->
               <div>
-                <a href="{{ route('voir',['id_contenu'=>md5($tab->id_contenu)])}}"> <h3><strong>Titre : {{ $tab->titre}}</strong></h3></a>
+                <a href="{{ route('voir',['id_contenu'=>md5($tab->id_contenu)])}}"> <h5><strong>Titre : {{ $tab->titre}}</strong></h5></a>
                 <p> le {{ $tab->date_sortie }}</p>
                 <h5> Domaine : {{  $tab->domaine }}</h5>
                 <h5> Secteur : {{  $tab->secteur }}</h5>
