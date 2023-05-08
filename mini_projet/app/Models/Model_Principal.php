@@ -26,7 +26,7 @@ class Model_Principal extends Authenticatable
     public function insert($titre,$image,$domaine,$secteur,$descr,$illustrateur,$extension){
         return DB::insert('insert into contenu(titre,id_domaine,id_secteur,description,image,illustrateur,extension) values(?,?,?,?,?,?,?)', [$titre, $domaine, $secteur, $descr,$image,$illustrateur,$extension]);
     }
-    function paginate_contenu($perPage = 10)
+    function paginate_contenu($perPage = 4)
     {
         return  DB::table('pub')->simplepaginate($perPage);
     }
@@ -44,7 +44,7 @@ class Model_Principal extends Authenticatable
             });
 
         $results = $query->get();
-        $results = $query->simplepaginate(10);
+        $results = $query->simplepaginate(4);
         return $results;
     }
     function getpub($crypt_id){
