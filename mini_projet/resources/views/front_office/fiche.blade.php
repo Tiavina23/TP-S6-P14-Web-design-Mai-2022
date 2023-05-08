@@ -216,7 +216,15 @@
 
               </div>
               @endforeach
-
+                 @else
+              @for($i = 0; $i < 3; $i++)
+              <div class="card-body">
+                <h5 class="card-title">I A <span>| Today</span></h5>
+              <div class="activity">
+                <img class="card-body p-0" src="/uploads/1.jpg}}" alt="..." style="width: 400px;height: 300px;">
+                </div>
+            </div>
+            @endfor
               @endif
             </div><!-- End Recent Activity -->
             <!-- Recent Activity -->
