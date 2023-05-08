@@ -23,8 +23,8 @@ class Model_Principal extends Authenticatable
 
         return DB::table($table)->get();
     }
-    public function insert($titre,$image,$domaine,$secteur,$descr,$illustrateur){
-        return DB::insert('insert into contenu(titre,id_domaine,id_secteur,description,image,illustrateur) values(?,?,?,?,?,?)', [$titre, $domaine, $secteur, $descr,$image,$illustrateur]);
+    public function insert($titre,$image,$domaine,$secteur,$descr,$illustrateur,$extension){
+        return DB::insert('insert into contenu(titre,id_domaine,id_secteur,description,image,illustrateur,extension) values(?,?,?,?,?,?,?)', [$titre, $domaine, $secteur, $descr,$image,$illustrateur,$extension]);
     }
     function paginate_contenu($perPage = 10)
     {
