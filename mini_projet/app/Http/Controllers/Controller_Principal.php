@@ -46,10 +46,10 @@ class Controller_Principal extends BaseController
         $a= $this->model()->login('admin',$email,$mdp);
         $a1= $this->model()->login('utilisateur',$email,$mdp);
         if(count($a)==1){
-           return view('back_office\ajout_contenu',['data'=>$data,'data1'=>$data1]);
+           return view('back_office.ajout_contenu',['data'=>$data,'data1'=>$data1]);
         }
         else if(count($a1)==1){
-           return view('front_office\actualite',['data'=>$liste,'data1'=>$data,'data2'=>$data1]);
+           return view('front_office.actualite',['data'=>$liste,'data1'=>$data,'data2'=>$data1]);
 
         }
     }
@@ -66,7 +66,7 @@ class Controller_Principal extends BaseController
         $data=$this->model()->getdata('domaine');
         $data1=$this->model()->getdata('secteur');
        $this->model()->insert($titre,$imageName,$domaine,$secteur,$des,$illustrateur);
-       return view('back_office\ajout_contenu',['data'=>$data,'data1'=>$data1]);
+       return view('back_office.ajout_contenu',['data'=>$data,'data1'=>$data1]);
     }
 
 
@@ -74,7 +74,7 @@ class Controller_Principal extends BaseController
         $data=$this->model()->getdata('domaine');
         $data1=$this->model()->getdata('secteur');
         $liste=$this->model()->paginate_contenu();
-        return view('front_office\actualite',['data'=>$liste,'data1'=>$data,'data2'=>$data1]);
+        return view('front_office.actualite',['data'=>$liste,'data1'=>$data,'data2'=>$data1]);
 
     }
 
@@ -85,7 +85,7 @@ class Controller_Principal extends BaseController
         $data1=$this->model()->getdata('domaine');
         $data2=$this->model()->getdata('secteur');
         $data = $this->model()->recherche($val);
-        return view('front_office\actualite',['data'=>$data,'data1'=>$data1,'data2'=>$data2]);
+        return view('front_office.actualite',['data'=>$data,'data1'=>$data1,'data2'=>$data2]);
     }
 
     public function update(Request $request)
@@ -148,7 +148,7 @@ class Controller_Principal extends BaseController
         $liste=$this->model()->getdatapub('id_secteur',$id);
         $data=$this->model()->getdata('domaine');
         $data1=$this->model()->getdata('secteur');
-        return view('front_office\actualite',['data'=>$liste,'data1'=>$data,'data2'=>$data1]);
+        return view('front_office.actualite',['data'=>$liste,'data1'=>$data,'data2'=>$data1]);
 
     }
     function gen_dom(){
@@ -156,7 +156,7 @@ class Controller_Principal extends BaseController
         $liste=$this->model()->getdatapub('id_secteur',$id);
         $data=$this->model()->getdata('domaine');
         $data1=$this->model()->getdata('secteur');
-        return view('front_office\actualite',['data'=>$liste,'data1'=>$data,'data2'=>$data1]);
+        return view('front_office.actualite',['data'=>$liste,'data1'=>$data,'data2'=>$data1]);
 
     }
 
