@@ -127,7 +127,7 @@
 
 
                     <div class="carousel-item active">
-                        <img src="/uploads/{{$data['image']}}" class="d-block w-100" alt="..."  >
+                        <img src="data:image/{{ $data['extension'] }};base64,{{ $data->['image'] }}" class="d-block w-100" alt="..."  >
                       </div>
 
                 </div>
