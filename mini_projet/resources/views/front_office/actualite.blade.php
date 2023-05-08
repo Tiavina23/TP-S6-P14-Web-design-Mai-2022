@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta name="description" content="Découvrez les dernières actualités et tendances de l'intelligence artificielle . Restez informé des derniers développements en matière d'IA dans différents domaines.">
-  <meta property="og:title" content="Actualités de l'intelligence artificielle | Nom de la Société">
+  <meta property="og:title" content="Actualités de l'intelligence artificielle">
   <meta property="og:description" content="Découvrez les dernières actualités et tendances de l'intelligence artificielle . Restez informé des derniers développements d'IA dans différents domaines.">
   <meta property="og:image" content="https://exemple.com/images/ia.jpg">
   <meta name="keywords" content="Intelligence artificielle, IA, actualités, tendances, santé, industrie, commerce ,evolution">
