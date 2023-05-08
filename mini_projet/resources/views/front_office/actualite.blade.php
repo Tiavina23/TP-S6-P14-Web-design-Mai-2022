@@ -187,11 +187,11 @@
     </div>
 
   </footer><!-- End Footer -->
+    
 
 
 
-
-
+ <script src="{{ secure_asset('assets/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
   <script src="{{secure_asset('assets/js/main.js')}}"></script>
 
 </body>
