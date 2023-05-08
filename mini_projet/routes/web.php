@@ -21,7 +21,7 @@ Route::post('/logintraitement', App\Http\Controllers\Controller_Principal::class
 Route::post('/ajout_contenu', App\Http\Controllers\Controller_Principal::class . '@ajout')->name('ajout_contenu');
 Route::get('/ajout', App\Http\Controllers\Controller_Principal::class . '@aj');
 Route::post('ckeditor/image_upload', 'CKEditorController@upload')->name('upload');
-Route::get('/front', App\Http\Controllers\Controller_Principal::class . '@data_contenu')->middleware(['gzip', 'cache:60'])->name('front');
+Route::get('/front', App\Http\Controllers\Controller_Principal::class . '@data_contenu')->name('front');
 Route::post('/search', App\Http\Controllers\Controller_Principal::class . '@search');
 Route::get('/RewriteUrl/{id_contenu}', App\Http\Controllers\Controller_Principal::class . '@gen_fiche')->name('voir');
 Route::get('/Secteur/{id_secteur}', App\Http\Controllers\Controller_Principal::class . '@gen_sec')->name('secteur');
